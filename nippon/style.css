@@ -1,28 +1,33 @@
+/*ændre default settings*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+/*skifte baggrundsfarve*/
 body{
     background-color: #FFF5ED;
 }
 
+/* gøre baggrundsbilledet fixed, relative og fylde hele skærmen*/
 .backgroundpicture{
     margin: 0;
     padding: 0;
     height: 650px;
     background-image: url('img/baggrund.png');
-    background-size: cover; /* Skaler billedet, så det dækker hele baggrunden */
-    background-position: center; /* Centrer billedet på baggrunden */
-    background-repeat: no-repeat; /* Forhindre gentagelse af billedet */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     background-attachment: fixed;
-    position: relative; /* Indstil positionen til relativ, så vi kan positionere .textbox inde i den */
+    position: relative;
 }
 
+/*ændre størrelse på logo*/
 .logo{
     width: 180px;
 }
 
+/*ændre på udseendet af nav-bar. give padding, float, with*/
 .nav-links{
     float: right;
 }
@@ -32,72 +37,77 @@ body{
 }
 .navbar {
     position: fixed;
-    top: 0; /* Fastgør navigationsbjælken øverst på siden */
-    width: 100%; /* Sæt bredden til 100% af skærmbredden */
-    z-index: 1000; /* Sørg for, at navigationsbjælken ligger øverst */
+    top: 0;
+    width: 100%;
+    z-index: 1000;
     background-color: #FFF5ED;
 }
-/* Style the unordered list */
+/* Style unordered list */
 .navbar ul {
-    list-style-type: none; /* Remove bullet points */
-    padding: 0; /* Remove default padding */
+    list-style-type: none;
+    padding: 0;
 }
 
-/* Style the list items */
+/* Style list items */
 .navbar li {
-    display: inline-block; /* Display list items inline */
+    display: inline-block;
 }
 
-/* Style the navigation links */
+/* Style navigation links */
 .navbar a {
-    display: block; /* Make the links block elements */
-    color: rgb(0, 0, 0); /* Text color */
-    text-decoration: none; /* Remove underlines from links */
+    display: block;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
     font-size: 25px;
 }
 
-/* Change color of links on hover */
+/* ændre farven ved hover */
 .navbar a:hover {
-    color: #B6312D; /* Change text color on hover */
+    color: #B6312D;
 }
 
+/*style tekstboxen så den er i højre side og centret*/
 .textbox {
-    position: absolute; /* Indstil positionen til absolut, så vi kan positionere den inden i .backgroundpicture */
-    top: 60%; /* Placer .textbox 50% fra toppen af .backgroundpicture */
-    left: 25%; /* Placer .textbox 50% fra venstre side af .backgroundpicture */
-    transform: translate(-50%, -50%); /* Centrer .textbox både vandret og lodret */
-    text-align: center; /* Centrer teksten inde i .textbox */
-    padding: 20px; /* Juster polstring efter behov */
+    position: absolute; 
+    top: 60%; 
+    left: 25%; 
+    transform: translate(-50%, -50%);
+    text-align: center; 
+    padding: 20px; 
     background-color: #B6312D;
     opacity: 85%;
-    max-width: 600px; /* Begræns bredden af .textbox */
+    max-width: 600px; 
     color: white;
 }
 
+/*ændre font størrelse og udseende*/
 h1 {
-    font-size: 2.5em; /* Juster skriftstørrelsen efter behov */
-    margin-bottom: 20px; /* Juster afstanden mellem overskrift og afsnit efter behov */
+    font-size: 2.5em; 
+    margin-bottom: 20px;
 }
 
 p {
-    font-size: 1.2em; /* Juster skriftstørrelsen efter behov */
-    line-height: 1.5; /* Juster linjeafstanden efter behov */
+    font-size: 1.2em;
+    line-height: 1.5; 
 }
 
+/*style ikoner med flexbox, space around og align */
 .ikoner {
     margin-top: 20px;
-    display: flex; /* Brug flexbox til at placere divs ved siden af hinanden */
-    justify-content: space-around; /* Juster indholdets placering for at opnå ønsket afstand */
-    align-items: center; /* Centrer indholdet lodret */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
+/* Fjern standardmargen for h4 */
 .ikoner h3 {
-    margin-top: 0; /* Fjern standardmargen for h4 */
+    margin-top: 0;
 }
 
+/*centrer indhold, juster størrelse på div*/
 .ikoner div {
-    text-align: center; /* Centrer indholdet i hver div vandret */
-    width: 200px; /* Juster bredden af hver div efter behov */
-    margin: 30px; /* Tilføj margen omkring hver div for at adskille dem */
+    text-align: center; 
+    width: 200px; 
+    margin: 30px; 
     vertical-align: top;
 }
 
@@ -107,14 +117,27 @@ p {
     margin: 20px;
 }
 
+/*indsæt baggrundbillede der dækker siden og er fixed og relative*/
 .nemtsection{
-    margin: 0;
+    margin: 30px 0px;
     padding: 0;
     height: 650px;
-    background-image: url('img/baggrund.png'); /* Sti til dit billede */
-    background-size: cover; /* Skaler billedet, så det dækker hele baggrunden */
-    background-position: center; /* Centrer billedet på baggrunden */
-    background-repeat: no-repeat; /* Forhindre gentagelse af billedet */
+    background-image: url('img/baggrund2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
     background-attachment: fixed;
-    position: relative; /* Indstil positionen til relativ, så vi kan positionere .textbox inde i den */
+    position: relative;
+}
+
+/*style tekstboxen ovenpå billedet*/
+.nemtbox{
+    position: absolute;
+    top: 0%; 
+    right: 0%; 
+    text-align: center; 
+    padding: 20px;
+    background-color: #B6312D;
+    width: 600px;
+    color: white;
 }
