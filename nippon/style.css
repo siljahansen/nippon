@@ -120,28 +120,41 @@ p {
 /*Favoritkassen start*/
 /* Container styling */
 .container {
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
 /* Favorite Box styling */
 .favorite-box {
-    background-color: #f4f4f4;
+    margin-top: 100px;
     padding: 2rem;
     text-align: center;
+    color: #000;
+}
+
+.favorite-box h2{
+    font-size: 50px;
+    margin-bottom: 20px;
 }
 
 .favorite-box button {
-    background-color: #ff0000;
+    margin-top: 50px;
+    background-color: #B6312D;
     color: #fff;
-    padding: 1rem 2rem;
+    padding: 1rem 5rem;
     border: none;
+    border-radius: 25px;
     cursor: pointer;
     font-size: 1rem;
 }
 
 /* Recipe styling */
+
+.container h2{
+    margin-bottom: 30px;
+}
+
 .recipe {
     padding: 2rem 0;
     text-align: center;
@@ -150,7 +163,7 @@ p {
 .recipe-images {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px;
+    grid-gap: 70px;
 }
 
 .recipe-item {
@@ -164,11 +177,11 @@ p {
 
 .overlay {
     position: absolute;
-    top: 0;
+    top: 30%;
     left: 0;
-    background-color: rgba(255, 0, 0, 0.5);
+    background-color: #B6312D;
     width: 100%;
-    height: 70%;
+    height: 40%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -185,4 +198,10 @@ p {
 .overlay h3, .overlay p {
     margin: 0;
 }
+
+.overlay h3 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
 /*Favoritkassen slut*/
