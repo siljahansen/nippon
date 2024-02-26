@@ -11,7 +11,7 @@ body{
     margin: 0;
     padding: 0;
     height: 650px;
-    background-image: url('img/baggrund.png'); /* Sti til dit billede */
+    background-image: url('img/baggrund.png');
     background-size: cover; /* Skaler billedet, så det dækker hele baggrunden */
     background-position: center; /* Centrer billedet på baggrunden */
     background-repeat: no-repeat; /* Forhindre gentagelse af billedet */
@@ -63,7 +63,7 @@ body{
 
 .textbox {
     position: absolute; /* Indstil positionen til absolut, så vi kan positionere den inden i .backgroundpicture */
-    top: 50%; /* Placer .textbox 50% fra toppen af .backgroundpicture */
+    top: 60%; /* Placer .textbox 50% fra toppen af .backgroundpicture */
     left: 25%; /* Placer .textbox 50% fra venstre side af .backgroundpicture */
     transform: translate(-50%, -50%); /* Centrer .textbox både vandret og lodret */
     text-align: center; /* Centrer teksten inde i .textbox */
@@ -105,4 +105,16 @@ p {
 .ikon-img{
     width: 100px;
     margin: 20px;
+}
+
+.nemtsection{
+    margin: 0;
+    padding: 0;
+    height: 650px;
+    background-image: url('img/baggrund.png'); /* Sti til dit billede */
+    background-size: cover; /* Skaler billedet, så det dækker hele baggrunden */
+    background-position: center; /* Centrer billedet på baggrunden */
+    background-repeat: no-repeat; /* Forhindre gentagelse af billedet */
+    background-attachment: fixed;
+    position: relative; /* Indstil positionen til relativ, så vi kan positionere .textbox inde i den */
 }
